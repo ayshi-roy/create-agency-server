@@ -4,7 +4,7 @@ const cors = require('cors');
 const fileUpload = require('express-fileupload');
 require('dotenv').config()
 
-const port = 5000
+
 
 const app = express();
 app.use(cors());
@@ -124,4 +124,4 @@ client.connect(err => {
       res.send('Hello World!')
     })
   
-  app.listen(process.env.PORT || port);
+  app.listen(process.env.PORT);
